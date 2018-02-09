@@ -50,16 +50,13 @@ namespace ProjectName.Droid
                 });
             gradientTouch.SetCornerRadius(20);
             gradientTouch.SetStroke(0, btn.StartColor.ToAndroid());
-
             return gradientTouch;
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Button> e)
         {
             base.OnElementChanged(e);
-
-
-           // thisButton.Click += HandleButtonClicked;
+            // thisButton.Click += HandleButtonClicked;
 
             if (e.OldElement != null || Element == null)
             {
